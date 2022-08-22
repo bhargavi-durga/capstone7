@@ -1,0 +1,8 @@
+ProductId,ProductName,Price,Stock,Description,ProductIcon,CategoryType
+HM010,DESK,5990,60,"Desk, white, 93x51 cm (36 5/8x20 1/8 "")",https://www.ikea.com/in/en/images/products/smagoera-desk-white__0973410_pe812008_s5.jpg?f=xl,0
+WC010,WALL LAMP,1690,60,"Wall lamp, brass-colour",https://www.ikea.com/in/en/images/products/frihult-wall-lamp-brass-colour__0689522_pe723016_s5.jpg?f=xl,2
+WC011,ART CARD,199,60,"Art card, small things, 13x18 cm (5x7 "")",https://www.ikea.com/in/en/images/products/vaexbo-art-card-small-things__1061100_pe850260_s5.jpg?f=xxs,2
+DR011,PENDANT LAMP,9990,60,"Pendant lamp, white/silver-colour, 52 cm (20 "")",https://www.ikea.com/in/en/images/products/ikea-ps-2014-pendant-lamp-white-silver-colour__0412639_pe582256_s5.jpg?f=xl,3
+DR012,LED LIGHTING CHAIN,999,60,decoration outdoor/battery-operated star,https://www.ikea.com/in/en/images/products/solvinden-led-lighting-chain-with-12-lights-decoration-outdoor-battery-operated-star__1047479_pe843397_s5.jpg?f=xl,3
+FR010,CURTAINS,799,60,"Curtains with tie-backs, 1 pair, white, 140x150 cm (55x59 "")",https://www.ikea.com/in/en/images/products/lenda-curtains-with-tie-backs-1-pair-white__0888023_pe569617_s5.jpg?f=xl,1
+FR011,BENCH,8000,60,"Bench, Nolhaga grey-beige/black/wood",https://www.ikea.com/in/en/images/products/stocksund-bench-nolhaga-grey-beige-black-wood__0738010_pe689650_s5.jpg?f=xl,1

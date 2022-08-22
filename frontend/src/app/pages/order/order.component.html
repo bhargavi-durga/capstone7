@@ -1,0 +1,46 @@
+<h1 align="center" class="display-4 mb-5">Orders</h1>
+
+<table class="table table-striped text-center">
+    <thead>
+    <tr>
+        <th scope="col">Order #</th>
+        <th scope="col">Customer Name</th>
+        <th scope="col">Customer Email</th>
+        <th scope="col">Customer phone</th>
+        <th scope="col">Shipping Address</th>
+        <th scope="col">Total</th>
+        <th scope="col">Order Data</th>
+        <th scope="col">Status</th>
+        <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr *ngFor="let order of page?.content">
+        <th class="align-middle" scope="row">
+            {{order.orderId}}
+        </th>
+        <td class="align-middle" style="font-size:1.5rem">{{order.buyerName}}</td>
+        <td class="align-middle"style="font-size:1.5rem">{{order.buyerEmail}}</td>
+        <td class="align-middle"style="font-size:1.5rem">{{order.buyerPhone}}</td>
+        <td class="align-middle"style="font-size:1.5rem">{{order.buyerAddress}}</td>
+        <td class="align-middle"style="font-size:1.5rem">{{order.orderAmount | currency}}</td>
+        <td class="align-middle"style="font-size:1.5rem">{{order.createTime | date}}</td>
+        <td class="align-middle"style="font-size:1.5rem">{{OrderStatus[order.orderStatus]}}</td>
+        <td class="align-middle">
+            <a *ngIf="!(currentUser.role == Role.Customer && currentUser.name == order.buyerEmail)"
+               style="display:
+            block" href="" routerLink="/order/{{order.orderId}}" style="color:rgba(149, 22, 6, 0.844);font-size: 1.5rem;" >
+                <b>Show</b></a><br>
+            <a *ngIf="order.orderStatus == 0" style="display: block;font-size: 1.0rem;" (click)="cancel(order)" routerLink="./" style="color:rgba(7, 6, 71, 0.844);font-size: 1.0rem;"><b>Cancel</b></a>
+            <a *ngIf="currentUser.role != Role.Customer && order.orderStatus == 0"
+               style="display: block"
+               (click)="finish(order)"
+               routerLink="./">
+                Finish</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<app-pagination [currentPage]="page"></app-pagination>
