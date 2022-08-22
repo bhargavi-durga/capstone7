@@ -64,7 +64,7 @@ export class ProductListComponent implements OnInit, OnDestroy {
         }
     }
 
-    getProds(page: number = 1, size: number = 5) {
+    getProds(page: number = 1, size: number = 20) {
         this.productService.getAllInPage(+page, +size)
             .subscribe(page => {
                 this.page = page;
